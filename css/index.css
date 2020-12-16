@@ -1,0 +1,128 @@
+.hidden {
+  display: none;
+}
+
+.page {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.page .wrapper {
+  position: relative;
+  margin-right: 12%;
+  margin-left: 12%;
+}
+
+.me {
+  width: 100%;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.me .text {
+  margin-bottom: 180px;
+  width: 40vw;
+}
+.me .text h1 {
+  font-size: 52px;
+  margin-bottom: 12px;
+  line-height: 56px;
+}
+.me .text p {
+  font-size: 20px;
+  line-height: 35px;
+}
+.me .photo img {
+  margin-right: grid(2, 3);
+  width: 35vw;
+  max-width: 500px;
+  float: right;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease;
+}
+
+nav .nav__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+nav .home {
+  order: 1;
+  text-align: left;
+  width: 100px;
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+nav .home:hover {
+  transform: scale(1.1);
+}
+
+nav .center {
+  order: 2;
+  text-align: center;
+  margin: 0 auto;
+}
+nav .center a {
+  position: relative;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+nav .right {
+  order: 3;
+  text-align: right;
+  width: 100px;
+}
+nav .right a {
+  position: relative;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+nav a {
+  font-family: "Hepta Slab", serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.link {
+  position: relative;
+  z-index: 2;
+}
+
+.link:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #faca0c;
+  width: 100%;
+  transition: top 0.1s ease;
+}
+
+.link:hover:after {
+  top: 55%;
+  transition: top 0.3s ease;
+}
