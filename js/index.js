@@ -1,4 +1,9 @@
 export default function pageManager() {
+    const about = document.querySelector(".about")
+    const work = document.querySelector(".work")
+    const git = document.querySelector(".git")
+    
+
     let last = 0
     const threshold = 200
     const navigation = document.getElementById("nav-js")
@@ -16,11 +21,14 @@ export default function pageManager() {
 
     const init = () => {
         window.addEventListener("scroll", casing)
+        about.addEventListener("click")
+        work.addEventListener("click")
     }
-
+    
     init()
-}
 
+}
 window.onload = () =>{
     new pageManager()
 }
+console.log();
