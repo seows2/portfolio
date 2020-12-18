@@ -156,3 +156,95 @@ nav a {
     width: 0%;
   }
 }
+
+.project {
+  position: relative;
+}
+.project .cards {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 35vw;
+  margin-bottom: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(49, 48, 47, 0);
+  transition: 0.3s all ease, 0.3s box-shadow ease;
+}
+
+.card .image img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .description {
+  width: 100%;
+  height: 130px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card .description .wrapper {
+  width: 84%;
+  margin-left: 6%;
+  transition: 0.3s all ease;
+}
+
+.card .description .wrapper p {
+  color: #7f7871;
+  margin-top: 12px;
+}
+
+.card .bottom-description {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 130px;
+  background-color: #fff;
+  transform-origin: 50% 100%;
+  transition: 0.3s all ease;
+}
+
+.indicator {
+  position: relative;
+  overflow: hidden;
+  width: 16%;
+  margin-right: 10%;
+  transition: 0.3s all ease;
+}
+
+.card:hover {
+  box-shadow: 0 40px 80px rgba(49, 48, 47, 0.1);
+  transform: scale(1.03);
+}
+
+.card:hover .bottom-description {
+  transform: scaleY(1.1);
+}
+
+.card:hover .indicator,
+.card:hover .wrapper {
+  transform: translateY(-8px);
+}
+
+.card:hover .arrow {
+  transform: translateX(0);
+}
+
+.project2 {
+  margin-top: 140px;
+}
