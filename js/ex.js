@@ -29,7 +29,7 @@ export default class pageManager {
         if(id === "about-link"){
             this.scrollTo(0, 1000)
         } else if(id === "work-link"){
-            this.scrollTo(800, 1000)
+            this.scrollTo(930, 1000)
         }
     }
 
