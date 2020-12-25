@@ -170,7 +170,7 @@ nav a {
 }
 
 .card {
-  width: 35.5vw;
+  width: 32vw;
   max-width: calc((35.5px * 19.2));
   margin-bottom: 80px;
   cursor: pointer;
@@ -253,8 +253,9 @@ nav a {
 
 .box {
   position: absolute;
+  top: -50px;
   width: 100vw;
-  height: 60%;
-  margin-left: -12vw;
+  height: 70%;
+  padding-right: 2000px;
   background-color: #f5f2f0;
 }
