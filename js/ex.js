@@ -12,6 +12,8 @@ export default class pageManager {
     window.addEventListener("resize", this.calculate);
 
     this.calculate();
+    // calculate함수 참조
+    // https://codepen.io/knyttneve/pens/public?cursor=ZD0xJm89MCZwPTEmdj0zOTYwMjEyMg==
   }
 
   casing = () => {
