@@ -85,6 +85,7 @@ nav .center a {
   cursor: pointer;
   margin-right: 50px;
   margin-left: 50px;
+  transition: all 0.3s ease;
 }
 nav .right {
   order: 3;
@@ -102,6 +103,7 @@ nav a {
   font-family: "Hepta Slab", serif;
   font-size: 14px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .link {
@@ -258,4 +260,24 @@ nav a {
   height: 70%;
   padding-right: 2000px;
   background-color: #f5f2f0;
+}
+
+@media (max-width: 940px) {
+  nav a {
+    font-size: 12px;
+  }
+  nav .center a {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 12px;
+  }
+  nav .center a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }

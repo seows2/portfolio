@@ -1,122 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>나를 소개합니다</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="overlay hidden"></div>
     <div class="page">
-        <div class="wrapper">
-            <nav class="light" id="nav-js">
-                <div class="nav__wrapper" id="menu">
-                    <a class="home" href="index.html">SeoWS</a>
-                    <div class="center">
-                        <a class="about link dark" id="about-link">about me</a>
-                        <a class="work link dark" id="work-link">work</a>
-                    </div>
-                    <div class="right">
-                        <a class="git link dark" href="https://github.com/seows2" target="_blank">git</a>
-                    </div>
+      <div class="wrapper">
+        <nav class="light" id="nav-js">
+          <div class="nav__wrapper" id="menu">
+            <a class="home" href="index.html">SeoWS</a>
+            <div class="center">
+              <a class="about link dark" id="about-link">about me</a>
+              <a class="work link dark" id="work-link">work</a>
+              <a class="work link dark" id="work-link">skill</a>
+            </div>
+            <div class="right">
+              <a
+                class="git link dark"
+                href="https://github.com/seows2"
+                target="_blank"
+                >git</a
+              >
+            </div>
+          </div>
+        </nav>
+        <section class="me">
+          <div class="text">
+            <h1>안녕하세요,</h1>
+            <p>
+              예비 개발자 서우석입니다. <br />
+              프론트엔드 개발자를 목표로 공부하고 있습니다!
+            </p>
+          </div>
+          <div class="photo">
+            <img src="../images/seows.JPG" alt="내 사진" />
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="box"></div>
+          <div class="cards" id="cards" style="margin-top: 100px">
+            <a
+              class="card project1"
+              style="order: 1"
+              href="https://github.com/seows2/wotube"
+              target="_blank"
+            >
+              <div class="container">
+                <div
+                  class="image"
+                  style="
+                    background-image: url(../images/pinkO.jpeg);
+                    background-size: cover;
+                  "
+                >
+                  <img
+                    src="../images/yt_logo_rgb_light.png"
+                    alt="유튜브 클론 프로젝트"
+                    style="object-fit: contain; width: 80%; margin-left: 10%"
+                  />
                 </div>
-            </nav>
-            <section class="me">
-                <div class="text">
-                    <h1>안녕하세요,</h1>
-                    <p>예비 개발자 서우석입니다. <br> 프론트엔드 개발자를 목표로 공부하고 있습니다!</p>
+                <div class="bottom-description"></div>
+                <div class="description">
+                  <div class="wrapper">
+                    <h4 class="dark">유튜브</h4>
+                    <p>유튜브 클론 프로젝트 (프론트엔드 + 백엔드)</p>
+                  </div>
+                  <div class="indicator">
+                    <!-- <img class="arrow" src="../images/arrow.png" alt=""> -->
+                  </div>
                 </div>
-                <div class="photo">
-                    <img src="../images/seows.JPG" alt="내 사진">
+              </div>
+            </a>
+            <a
+              class="card project2"
+              style="order: 3"
+              href="https://github.com/seows2/Cat-Fansite"
+              target="_blank"
+            >
+              <div class="container">
+                <div class="image" style="background-color: rgb(238, 238, 238)">
+                  <img
+                    src="../images/about.png"
+                    alt="고양이 팬페이지"
+                    style="object-fit: contain"
+                  />
                 </div>
-            </section>
-            <section class="skill__wrapper">
-                <div class="skill">
-                    <h3 class="skill-title">HTML</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 60%"></div>
-                    </div>
+                <div class="bottom-description"></div>
+                <div class="description">
+                  <div class="wrapper">
+                    <h4 class="dark">고양이</h4>
+                    <p>고양이 팬페이지 (프론트엔드)</p>
+                  </div>
+                  <div class="indicator">
+                    <!-- <img class="arrow" src="../images/arrow.png" alt="화살표"> -->
+                  </div>
                 </div>
-                <div class="skill">
-                    <h3 class="skill-title">CSS</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 60%"></div>
-                    </div>
+              </div>
+            </a>
+            <a
+              class="card project3"
+              style="order: 2"
+              href="https://github.com/seows2/PS"
+              target="_blank"
+            >
+              <div class="container">
+                <div class="image">
+                  <img src="../images/seows.JPG" alt="알고리즘" />
                 </div>
-                <div class="skill">
-                    <h3 class="skill-title">JS</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 50%"></div>
-                    </div>
+                <div class="bottom-description"></div>
+                <div class="description">
+                  <div class="wrapper">
+                    <h4 class="dark">PS</h4>
+                    <p>알고리즘 공부</p>
+                  </div>
+                  <div class="indicator">
+                    <!-- <img class="arrow" src="../images/arrow.png" alt="화살표"> -->
+                  </div>
                 </div>
-                <div class="skill">
-                    <h3 class="skill-title">Java</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 30%"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="project">
-                <div class="box"></div>
-                <div class="cards" id="cards" style="margin-top: 100px">
-                    <a class="card project1" style="order: 1" href="https://github.com/seows2/wotube" target="_blank">
-                        <div class="container">
-                            <div class="image" style="background-image: url(../images/pinkO.jpeg); background-size: cover;">
-                                <img src="../images/yt_logo_rgb_light.png" alt="유튜브 클론 프로젝트" style="object-fit: contain; width: 80%; margin-left: 10%; ">
-                            </div>
-                            <div class="bottom-description"></div>
-                            <div class="description">
-                                <div class="wrapper">
-                                    <h4 class="dark">유튜브</h4>
-                                    <p>유튜브 클론 프로젝트 (프론트엔드 + 백엔드)</p>
-                                </div>
-                                <div class="indicator">
-                                    <!-- <img class="arrow" src="../images/arrow.png" alt=""> -->
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card project2" style="order: 3" href="https://github.com/seows2/Cat-Fansite" target="_blank">
-                        <div class="container">
-                            <div class="image" style="background-color: rgb(238, 238, 238);">
-                                <img src="../images/about.png" alt="고양이 팬페이지" style="object-fit: contain;">
-                            </div>
-                            <div class="bottom-description"></div>
-                            <div class="description">
-                                <div class="wrapper">
-                                    <h4 class="dark">고양이</h4>
-                                    <p>고양이 팬페이지 (프론트엔드)</p>
-                                </div>
-                                <div class="indicator">
-                                    <!-- <img class="arrow" src="../images/arrow.png" alt="화살표"> -->
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card project3" style="order: 2" href="https://github.com/seows2/PS" target="_blank">
-                        <div class="container">
-                            <div class="image">
-                                <img src="../images/seows.JPG" alt="알고리즘">
-                            </div>
-                            <div class="bottom-description"></div>
-                            <div class="description">
-                                <div class="wrapper">
-                                    <h4 class="dark">PS</h4>
-                                    <p>알고리즘 공부</p>
-                                </div>
-                                <div class="indicator">
-                                    <!-- <img class="arrow" src="../images/arrow.png" alt="화살표"> -->
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- <a class="card project4" style="order: 4">
+              </div>
+            </a>
+            <!-- <a class="card project4" style="order: 4">
                         <div class="container">
                             <div class="image">
                                 <img src="../images/seows.JPG" alt="">
@@ -133,10 +156,36 @@
                             </div>
                         </div>
                     </a> -->
-                </div>
-            </section>
-        </div>
+          </div>
+        </section>
+        <section class="skill__wrapper">
+          <div class="skill">
+            <h3 class="skill-title">HTML</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 class="skill-title">CSS</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 class="skill-title">JS</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 class="skill-title">Java</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 30%"></div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-</body>
-<script type="module" src="../js/ex.js"></script>
+  </body>
+  <script type="module" src="../js/ex.js"></script>
 </html>
