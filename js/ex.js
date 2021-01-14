@@ -21,7 +21,6 @@ export default class pageManager {
     const threshold = 200;
     const last = this.last;
     const up = position < last;
-    console.log(position);
     if (up || last === 0) {
       this.navigation.style.transform = "translateY(0)";
     } else if (position > threshold) {
@@ -34,13 +33,16 @@ export default class pageManager {
     const { nodeName } = e.target;
     const { id } = e.target;
     if (nodeName !== "A") return;
-    console.log(e.target);
     if (id === "about-link") {
       this.scrollTo(0, 1000);
     } else if (id === "work-link") {
-      this.scrollTo(700, 1000);
+      const posY = document.querySelector(`.project`).offsetTop;
+      console.log(id, posY);
+      this.scrollTo(posY, 1000);
     } else {
-      this.scrollTo(1400, 1000);
+      const posY = document.querySelector(`.personal`).offsetTop;
+      console.log(id, posY);
+      this.scrollTo(posY, 1000);
     }
   };
 
@@ -52,6 +54,7 @@ export default class pageManager {
     let destY = position;
     let direction = document.documentElement.scrollTop < destY ? 1 : -1;
     let timerId;
+
     const doTick = () => {
       let distLeft = Math.abs(document.documentElement.scrollTop - destY);
       let moveBy = Math.min(perTick, distLeft);
@@ -60,6 +63,7 @@ export default class pageManager {
         timerId = setTimeout(doTick, 2);
       }
     };
+
     clearTimeout(timerId);
     doTick();
   };
