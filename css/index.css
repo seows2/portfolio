@@ -85,7 +85,6 @@ nav .center a {
   cursor: pointer;
   margin-right: 50px;
   margin-left: 50px;
-  transition: all 0.3s ease;
 }
 nav .right {
   order: 3;
@@ -253,31 +252,33 @@ nav a {
   margin-top: 30%;
 }
 
-.box {
-  position: absolute;
-  top: -50px;
-  width: 100vw;
-  height: 70%;
-  padding-right: 2000px;
-  background-color: #f5f2f0;
-}
-
 @media (max-width: 940px) {
-  nav a {
-    font-size: 12px;
-  }
   nav .center a {
     margin-right: 32px;
     margin-left: 32px;
   }
 }
 
-@media (max-width: 768px) {
-  nav a {
-    font-size: 12px;
-  }
+@media (max-width: 786px) {
   nav .center a {
-    margin-right: 10px;
-    margin-left: 10px;
+    display: none;
   }
+}
+
+.personal {
+  position: relative;
+}
+.personal .box {
+  height: calc(100% + 140px);
+  margin-top: -60px;
+}
+
+.box {
+  position: absolute;
+  margin-top: -80px;
+  width: 93.8vw;
+  height: 70%;
+  padding-right: 2000px;
+  background-color: #f5f2f0;
+  z-index: -1;
 }

@@ -39,6 +39,8 @@ export default class pageManager {
       this.scrollTo(0, 1000);
     } else if (id === "work-link") {
       this.scrollTo(700, 1000);
+    } else {
+      this.scrollTo(1400, 1000);
     }
   };
 
