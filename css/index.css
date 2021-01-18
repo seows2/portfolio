@@ -282,3 +282,7 @@ nav a {
   background-color: #f5f2f0;
   z-index: -1;
 }
+
+.infomations {
+  height: 700px;
+}
