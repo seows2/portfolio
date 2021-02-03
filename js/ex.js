@@ -50,7 +50,7 @@ export default class pageManager {
     //console.log(document.documentElement.scrollTop);
     document.documentElement.scrollTop =
       document.documentElement.scrollTop || 0;
-    let perTick = time / 100;
+    let perTick = time / 60;
     let destY = position;
     let direction = document.documentElement.scrollTop < destY ? 1 : -1;
     let timerId;
