@@ -285,6 +285,27 @@ nav a {
 
 .infomations {
   height: 700px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(200px, 300px);
+  font-family: "Noto Sans KR", sans-serif;
+}
+.infomations .info {
+  margin-top: 35px;
+}
+.infomations .info .mono {
+  color: darkgoldenrod;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.infomations .info .pieces {
+  font-size: 1.2rem;
+}
+.infomations .info .pieces .link {
+  color: #cba0aa;
+  margin-left: 5px;
+}
+.infomations .info .pieces .text {
+  margin-bottom: 10px;
 }
