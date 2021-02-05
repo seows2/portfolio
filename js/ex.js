@@ -37,12 +37,10 @@ export default class pageManager {
       this.scrollTo(0, 1000);
     } else if (id === "work-link") {
       const posY = document.querySelector(`.project`).offsetTop;
-      console.log(id, posY);
       this.scrollTo(posY - 100, 1000);
     } else {
       const posY = document.querySelector(`.personal`).offsetTop;
-      console.log(id, posY);
-      this.scrollTo(posY - 200, 1000);
+      this.scrollTo(posY - 100, 1000);
     }
   };
 
