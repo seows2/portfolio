@@ -32,16 +32,16 @@ export default class pageManager {
   scrolling = (e) => {
     const { nodeName } = e.target;
     const { id } = e.target;
+    let posY;
     if (nodeName !== "A") return;
-    if (id === "about-link") {
-      this.scrollTo(0, 1000);
-    } else if (id === "work-link") {
-      const posY = document.querySelector(`.project`).offsetTop;
-      this.scrollTo(posY - 100, 1000);
+    if (id === "work-link") {
+      posY = document.querySelector(`.project`).offsetTop;
+    } else if (id === "about-link") {
+      posY = document.querySelector(`.personal`).offsetTop;
     } else {
-      const posY = document.querySelector(`.personal`).offsetTop;
-      this.scrollTo(posY - 100, 1000);
+      posY = document.querySelector(`.timeline`).offsetTop;
     }
+    this.scrollTo(posY - 100, 1000);
   };
 
   scrollTo = (position, time) => {
